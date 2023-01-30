@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agnieszka</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ffffff;
+            width: 100%;
+        }
+
+        .team-member {
+            position: relative;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .team-member--photo {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-member--photo--image {
+            width: 100%;
+            display: flex;
+        }
+
+        .team-member--photo--overlay {
+            position: absolute;
+            inset: 0;
+            transition: border-top 0.4s ease-in-out;
+            border: solid 50rem rgba(0, 0, 0, 0.438);
+            border-left: solid 0rem transparent;
+            border-top: solid 150rem transparent;
+        }
+
+        .team-member:hover {
+            height: 100%;
+            width: 100%;
+        }
+        .team-member:hover .team-member--photo--overlay {
+            border-left: solid 0rem transparent;
+            border-top: solid 0rem transparent;
+        }
+
+        .team-member:hover .team-member--photo--text {
+            opacity: 1;
+        }
+
+        .team-member--photo--text {
+            opacity: 0;
+            padding: 10%;
+            display: flex;
+            place-content: center;
+            place-items: center;
+            color: white;
+            font-size: 12px;
+            position: absolute;
+            font-family: Helvetica, Tahoma, sans-serif;
+            inset: 0;
+            text-align: center;
+            transition: opacity 1s ease-in-out;
+            transition-delay: opacity 0.5s;
+        }
+
+
+        .team-member--photo--motto {
+            margin-bottom: 2em;
+        }
+
+        .team-member--name {
+            font-family: Helvetica, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        .team-member--button {
+            box-sizing: border-box;
+            width: 100%;
+            border-radius: 4px;
+            background-color: #5f5350;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 17px;
+            padding: 10px 10px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .team-member--button:hover {
+            background-color: rgb(30, 30, 30);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="team-member">
+        <div class="team-member--photo">
+            <img src="../AGA/Aga.jpg" alt="Agnieszka" class="team-member--photo--image">
+            <div class="team-member--photo--overlay"></div>
+            <div class="team-member--photo--text">
+                <div>
+                    <h2 class="team-member--photo--motto">Zawsze do celu</h2>
+                    <p>"Wierzymy, że wszystko co dobre, osiągają tylko ci, którzy chcą włożyć w to pasje, odwagę i kunszt.
+                    Wierzymy, że wszystko, co dobre, osiągają tylko ci, którzy chcą włożyć w to pasje, odwagę i kunszt."
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="team-member--name"><b>Agnieszka</b></div>
+        <div class="team-member--button">WIĘCEJ</div>
+    </div>
+</body>
+
+</html>
